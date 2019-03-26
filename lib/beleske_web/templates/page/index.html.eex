@@ -1,0 +1,20 @@
+<section class="phx-hero">
+  <h1>Welcome to Notes</h1>
+  <p>Here you can keep your notes safe, if you are not signed up you can sign up at the link above,
+    or if you are already signed up, you can login at the link above.
+
+
+  </p>
+</section>
+
+<section class="row">
+  <article class="column">
+    <h2>Resources</h2>
+    <ul>
+      <li>
+          If you are logged in, you can view and make your notes here <%= link "Notes", to: Routes.note_path(@conn, :new) %>
+      </li>
+    </ul>
+  </article>
+
+</section>

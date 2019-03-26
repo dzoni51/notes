@@ -1,0 +1,18 @@
+<h1>Show Picture</h1>
+
+<ul>
+
+  <li>
+    <strong>Title:</strong>
+    <%= @picture.title %>
+  </li>
+
+  <li>
+    <strong>Image:</strong>
+      <img src="<%= Beleske.Image.url({ @picture.image, @picture }) %>" width="300" />
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.picture_path(@conn, :edit, @picture) %></span>
+<span><%= link "Back", to: Routes.picture_path(@conn, :index) %></span>
